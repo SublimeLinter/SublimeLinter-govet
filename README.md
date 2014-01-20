@@ -1,4 +1,4 @@
-SublimeLinter-contrib-vet
+SublimeLinter-contrib-govet
 ================================
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [go vet](http://godoc.org/code.google.com/p/go.tools/cmd/vet). It will be used with files that have the “__syntax__” syntax.
@@ -9,19 +9,14 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before using this plugin, you must ensure that `go` is installed on your system. To install `go`, do the following:
 
-1. Install Other.
+1. `go vet` is part of golang. It should be available if you have golang installed.
 
-1. Install `go` by typing the following in a terminal:
-   ```
-   <package manager> install golang
-   ```
-
-Once `vet` is installed, you must ensure it is in your system PATH so that SublimeLinter can find it. This may not be as straightforward as you think, so please read about [how linter executables are located][locating-executables] in the documentation.
+Once `go` is installed, you must ensure it is in your system PATH so that SublimeLinter can find it. This may not be as straightforward as you think, so please read about [how linter executables are located][locating-executables] in the documentation.
 
 ### Linter configuration
-In order for `vet` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+In order for `go vet` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
-Once you have installed and configured `vet`, you can proceed to install the SublimeLinter-contrib-vet plugin if it is not yet installed.
+Once you have installed and configured `go vet`, you can proceed to install the SublimeLinter-contrib-govet plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
@@ -30,17 +25,10 @@ To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `vet`. Among the entries you should see `SublimeLinter-contrib-vet`. If that entry is not highlighted, use the keyboard or mouse to select it.
+1. When the plugin list appears, type `govet`. Among the entries you should see `SublimeLinter-contrib-govet`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
-
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-vet provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
-
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
