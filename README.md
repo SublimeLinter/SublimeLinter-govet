@@ -7,11 +7,9 @@ This linter plugin for [SublimeLinter][docs] provides an interface to [go vet](h
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `go` is installed on your system. To install `go`, do the following:
+Before using this plugin, you must ensure that `go vet` is installed on your system. To install `go vet`, do the following:
 
-1. `go vet` is part of golang. It should be available if you have golang installed.
-
-Once `go` is installed, you must ensure it is in your system PATH so that SublimeLinter can find it. This may not be as straightforward as you think, so please read about [how linter executables are located][locating-executables] in the documentation.
+1. Install [go vet](http://godoc.org/code.google.com/p/go.tools/cmd/vet).
 
 ### Linter configuration
 In order for `go vet` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
