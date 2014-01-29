@@ -17,7 +17,7 @@ class Govet(Linter):
 
     """Provides an interface to go vet."""
 
-    syntax = 'go'
+    syntax = ('go', 'gosublime-go')
     cmd = ('go', 'tool', 'vet')
     regex = r'^vet:\s+.+:\s+.+:(?P<line>\d+):(?P<col>\d+):\s+(?P<message>.+)'
     tempfile_suffix = 'go'
