@@ -1,0 +1,5 @@
+SublimeLinter-contrib-govet 1.0.4
+---------------------------------
+The regex used to parse `go tool vet` output was buggy.
+This has been corrected. Linter should now be compatible with
+go versions 1.1.2 and 1.2.
