@@ -1,7 +1,7 @@
 SublimeLinter-contrib-govet
 ================================
 
-[![Build Status](https://travis-ci.org/SirReal/SublimeLinter-contrib-govet.png?branch=master)](https://travis-ci.org/SirReal/SublimeLinter-contrib-govet)
+[![Build Status](https://travis-ci.org/sirreal/SublimeLinter-contrib-govet.png?branch=master)](https://travis-ci.org/sirreal/SublimeLinter-contrib-govet)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [go vet](http://godoc.org/code.google.com/p/go.tools/cmd/vet). It will be used with files that have the “Go” syntax.
 
