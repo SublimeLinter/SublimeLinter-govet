@@ -14,7 +14,6 @@ from SublimeLinter.lint import Linter, util
 
 
 class Govet(Linter):
-
     """Provides an interface to go vet."""
 
     syntax = ('go', 'gosublime-go')
