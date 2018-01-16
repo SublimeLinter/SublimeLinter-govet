@@ -3,13 +3,13 @@ SublimeLinter-contrib-govet
 
 [![Build Status](https://travis-ci.org/sirreal/SublimeLinter-contrib-govet.png?branch=master)](https://travis-ci.org/sirreal/SublimeLinter-contrib-govet)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [go vet](http://godoc.org/code.google.com/p/go.tools/cmd/vet). It will be used with files that have the “Go” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [go vet](https://golang.org/cmd/vet/). It will be used with files that have the “Go” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `go vet` is installed on your system. To install `go vet`, follow the installation instructions [here](http://godoc.org/code.google.com/p/go.tools/cmd/vet).
+Before using this plugin, you must ensure that `go vet` is installed on your system. The `go vet` binary is in the default installation of Go, follow the installation instructions [here](https://golang.org/doc/install).
 
 ### Linter configuration
 In order for `go vet` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
