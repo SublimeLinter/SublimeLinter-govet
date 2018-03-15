@@ -22,6 +22,7 @@ class Govet(Linter):
     tempfile_suffix = 'go'
     error_stream = util.STREAM_STDERR
 
+    """Let the linter higlight column 0"""
     def split_match(self, match):
         match, line, col, error, warning, message, near = super().split_match(match)
         return match, line, 0, error, warning, message, near
