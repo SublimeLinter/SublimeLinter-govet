@@ -18,6 +18,10 @@ class Govet(Linter):
 
     syntax = ('go', 'gosublime-go')
     cmd = ('go', 'tool', 'vet')
-    regex = r'^.+:(?P<line>\d+):(?P<col>\d+):\s+(?P<message>.+)'
+    regex = r'^.+:(?P<line>\d+):\s+(?P<message>.+)'
     tempfile_suffix = 'go'
     error_stream = util.STREAM_STDERR
+
+    def split_match(self, match):
+        match, line, col, error, warning, message, near = super().split_match(match)
+        return match, line, 0, error, warning, message, near
