@@ -1,10 +1,7 @@
-SublimeLinter-contrib-govet
+SublimeLinter-govet
 -------------------------------
 This linter plugin for SublimeLinter provides an interface to go vet.
 
-** IMPORTANT! **
+Please read the installation instructions at:
 
-Before this plugin will activate, you *must*
-follow the installation instructions here:
-
-https://github.com/SirReal/SublimeLinter-contrib-govet
+https://github.com/SirReal/SublimeLinter-govet
