@@ -15,7 +15,7 @@ class Govet(Linter):
     }
 
     def split_match(self, match):
-        file_path = match.group('file_path') # Obtain parsed file path/name.
+        file_path = match.group('file_path')
         base_name = path.basename(file_path)
 
         dirname = path.dirname(self.filename)
