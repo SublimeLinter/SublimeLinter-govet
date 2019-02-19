@@ -4,4 +4,4 @@ This linter plugin for SublimeLinter provides an interface to go vet.
 
 Please read the installation instructions at:
 
-https://github.com/SirReal/SublimeLinter-govet
+https://github.com/SublimeLinter/SublimeLinter-govet
