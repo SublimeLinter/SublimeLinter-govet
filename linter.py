@@ -3,6 +3,7 @@ from SublimeLinter.lint import Linter, util
 
 
 class Govet(Linter):
+    column_unit = 'utf8'
     cmd = ('go', 'vet', '${file_path}')
 
     regex = r'(?P<file_path>^.+?):(?P<line>\d+):((?P<col>\d+):)?\s+(?P<message>(.|\n\t)+)'
